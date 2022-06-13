@@ -8,7 +8,10 @@
       function hanshin(){
       console.log(33*a+"-"+4*a)
 　　　　
-　　　　$('output').append(33*a+"-"+4*a);
+            var textbox_element = document.getElementById('output');
+            
+            var new_element = document.createElement('p');
+new_element.textContent = 33*a+"-"+4*a;
        a++
       }
 setInterval(hanshin,80);
