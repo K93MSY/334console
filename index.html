@@ -8,12 +8,7 @@
        var a=1;
       function hanshin(){
       console.log(33*a+"-"+4*a)
-　　　　
-            var output = document.getElementById('output');
-　　　　　　　output.insertAdjacentHTML('beforeend', '<br>'+33*a+'-'+4*a);
-            
-            //var new_element = document.createElement('a');
-　　　　　　　　//new_element.textContent = '<br>'33*a+"-"+4*a;
+　　　　var output = document.getElementById('output');output.insertAdjacentHTML('beforeend', '<br>'+33*a+'-'+4*a);
        a++
       }
 setInterval(hanshin,80);
